@@ -6,7 +6,7 @@
 # i3 config file (v4)
 
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -38,7 +38,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec lxterminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -48,8 +48,8 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec dmenu_run -i -nb '#111111' -nf '#406198' -sb '#246696' -sf '#111111' -fn 'NotoMonoRegular:bold:pixelsize=12'
-#bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec dmenu_run -i -nb '#f8f8f2' -nf '#282a36' -sb '#6276a4' -sf '#f8f8f2' -fn 'NotoMonoRegular:bold:pixelsize=14'
+bindsym $mod+r exec rofi -show run
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -179,46 +179,50 @@ bar {
     i3bar_command i3bar
     status_command i3status
     mode hide
-    hidden_state hide
+    hidden_state show
     modifier Mod1
     position top
 
  colors {
-        background #406198
-        statusline #111111
-        separator  #406198
+        background #285577
+        statusline #F8F8F2
+        separator  #44475A
 
-#                      border  backgr. text
-        focused_workspace  #406298 #406198 #000000
-        active_workspace   #406198 #406198 #860ADC
-        inactive_workspace #406198 #406198 #000000
-        binding_mode       #406198 #406198 #000000
-        urgent_workspace   #406198 #406198 #00ffff
+
+#                           border  backgr. text
+        focused_workspace  #44475A #285577 #F8F8F2
+        active_workspace   #44475A #285577 #F8F8F2
+        inactive_workspace #44475A #285577 #BFBFBF
+        binding_mode       #44475A #285577 #F8F8F2
+        urgent_workspace   #44475A #285577 #F8F8F2
     }
 }
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+#bindsym $mod+m bar mode toggle
+
+
+
 
 # Theme colors
-# class                   border  backgr. text    indic.   child_border
-  client.focused          #406198 #406198 #860ADC #860ADC
-  client.focused_inactive #406198 #406198 #1ABC9C #860ADC
-  client.unfocused        #406198 #406108 #1ABC9C #454948
-  client.urgent           #406198 #406108 #1ABC9C #268BD2
-  client.placeholder      #406198 #406108 #ffffff #000000 
+# class                    border  backgr. text    indic.   child_border
+#  client.focused          #6272A4 #285577 #F8F8F2 #6272A4   #6272A4
+#  client.focused_inactive #44475A #285577 #F8F8F2 #44475A   #44475A
+#  client.unfocused        #282A36 #285577 #f8f8f2 #282A36   #282A36
+#  client.urgent           #44475A #285577 #F8F8F2 #FF5555   #FF5555
+#  client.placeholder      #282A36 #285577 #F8F8F2 #282A36   #282A36
 
-  client.background       #2B2C2B
+
+#  client.background     #285577
+
 
 # The same as default_border none
-default_border pixel 1
+ default_border pixel 2
 
 # A 3 px border
-default_border pixel 1
+default_border pixel 2
 
-bar {
-    i3bar_command i3bar --transparency
-}
+ 
 
 
 
