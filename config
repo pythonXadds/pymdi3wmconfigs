@@ -199,7 +199,7 @@ bar {
 }
 
 # hide/unhide i3status bar
-#bindsym $mod+m bar mode toggle
+bindsym $mod+m bar mode toggle
 
 
 
@@ -217,10 +217,10 @@ bar {
 
 
 # The same as default_border none
- default_border pixel 2
+ default_border pixel 1
 
 # A 3 px border
-default_border pixel 2
+default_border pixel 1
 
  
 
