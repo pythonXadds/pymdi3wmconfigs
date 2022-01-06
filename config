@@ -48,8 +48,8 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+p exec dmenu_run -i -nb '#1E1F29' -nf '#406198' -sb '#246696' -sf '#111111' -fn 'NotoMonoRegular:bold:pixelsize=12'
-bindsym $mod+r exec rofi -show run
+#bindsym $mod+p exec dmenu_run -i -nb '#1E1F29' -nf '#406198' -sb '#246696' -sf '#111111' -fn 'NotoMonoRegular:bold:pixelsize=12'
+bindsym $mod+d exec rofi -show run
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -173,57 +173,257 @@ mode "resize" {
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    
-     
-    i3bar_command i3bar
-    status_command i3status
-    mode hide
-    hidden_state show
-    modifier Mod1
-    position top
+#bar {
+#    
+#     
+#    i3bar_command i3bar
+#    status_command i3status
+#    mode hide
+#    hidden_state show
+#    modifier Mod1
+#    position top
 
- colors {
-        background #406198
-        statusline #111111
-        separator  #406198
+# colors {
+#        background #D3621E
+#        statusline #111111
+#        separator  #406198
 
 #                      border  backgr. text
-        focused_workspace  #406298 #fff9f7 #000000
-        active_workspace   #406198 #fff9f7 #860ADC
-        inactive_workspace #406198 #fff9f7 #000000
-        binding_mode       #406198 #fff9f7 #000000
-        urgent_workspace   #406198 #fff9f #00ffff
-    }
-}
+#        focused_workspace  #D3621E #fff9f7 #000000
+#        active_workspace   #D3621E #fff9f7 #860ADC
+#        inactive_workspace #D3621E #fff9f7 #000000
+#        binding_mode       #D3621E #fff9f7 #000000
+#        urgent_workspace   #D3621E #fff9f #00ffff
+#    }
+#}
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+#bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #406198 #406198 #860ADC #860ADC
-  client.focused_inactive #406198 #406198 #1ABC9C #860ADC
-  client.unfocused        #406198 #406108 #1ABC9C #454948
-  client.urgent           #406198 #406108 #1ABC9C #268BD2
+  client.focused          #D3621E #D3621E #860ADC #860ADC
+  client.focused_inactive #D3621E #D3621E #1ABC9C #860ADC
+  client.unfocused        #D31E3C #FC0B36 #1ABC9C #454948
+  client.urgent           #406198 #FC0B36 #1ABC9C #268BD2
   client.placeholder      #406198 #406108 #ffffff #000000 
 
   client.background       #2B2C2B
 
 # The same as default_border none
-default_border pixel 3
+default_border pixel 5
 
 # A 3 px border
-default_border pixel 3
+default_border pixel 5
 
-bar {
-    i3bar_command i3bar --transparency
-}
+
+
+
 
 
 
 exec_always --no-startup-id xrandr --output LVDS1 --off --output VGA1 --primary --mode 1280x1024 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 #exec variety
 exec_always --no-startup-id nitrogen --restore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
