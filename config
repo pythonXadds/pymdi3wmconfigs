@@ -202,8 +202,8 @@ mode "resize" {
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #D3621E #D3621E #860ADC #860ADC
-  client.focused_inactive #D3621E #D3621E #1ABC9C #860ADC
+  client.focused          #D3621E #FCF50B #860ADC #860ADC
+  client.focused_inactive #D3621E #FCF50B #1ABC9C #860ADC
   client.unfocused        #D31E3C #FC0B36 #1ABC9C #454948
   client.urgent           #406198 #FC0B36 #1ABC9C #268BD2
   client.placeholder      #406198 #406108 #ffffff #000000 
